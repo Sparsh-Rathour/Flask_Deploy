@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Contact Us</title>
+    <style>
+         body {
+             background: url('https://images.unsplash.com/photo-1499159058454-75067059248a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D') no-repeat center center fixed;
+             -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .form-container {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin: auto;
+            max-width: 500px;
+            padding: 20px 30px;
+            background: rgb(63 80 98 / 50%);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container form-container">
+        <h2 class="text-center">Contact Us</h2>
+        
+        <form action="https://formsubmit.co/sparshrathour41@gmail.com" method="post">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+    </div>
+    <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next"  value="http://127.0.0.1:5000">
+                            <input type="hidden" name="_autoresponse" value="Welcome to My CRUD APPP">
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>
+
+<form action="/save_contact" method="post">
+     <button type="submit" class="btn btn-primary mt-3">Save</button> 
+</form>
+
+<a href="/display_contacts" class="btn btn-primary mt-3">Display Contacts</a>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
